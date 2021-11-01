@@ -1,0 +1,740 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     30315,        732]
+NotebookOptionsPosition[     28037,        698]
+NotebookOutlinePosition[     28380,        713]
+CellTagsIndexPosition[     28337,        710]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[{
+ StyleBox["Replace ",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox["\"\<\!\(\*SubscriptBox[\(Height\), \(i\)]\)\>\"", TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->16,ExpressionUUID->"27b60bb4-c1db-46f1-9a79-7d2e747e5f39"],
+ StyleBox[" below with the measured heights of the water in the tube, for \
+i=1,2,3,4 (in meters).",
+  FontSize->16]
+}], "Text",
+ CellChangeTimes->{{3.8429387683275747`*^9, 3.842938770462805*^9}, {
+  3.842938869662938*^9, 3.8429388992325*^9}, {3.8429390563128552`*^9, 
+  3.8429390779525113`*^9}, {3.842939218348549*^9, 3.842939254398855*^9}, {
+  3.8429393068965564`*^9, 3.842939377920982*^9}, {3.842939559812909*^9, 
+  3.842939560671013*^9}, {3.8429398811226416`*^9, 3.8429399362134447`*^9}, {
+  3.842939973730956*^9, 
+  3.8429399778611984`*^9}},ExpressionUUID->"9b41f2d8-cf80-4d10-bf71-\
+607222d87abe"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Heights", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["Height", "1"], ",", 
+     SubscriptBox["Height", "2"], ",", 
+     SubscriptBox["Height", "3"], ",", 
+     SubscriptBox["Height", "4"]}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.84293999225117*^9, 
+  3.8429399987603936`*^9}},ExpressionUUID->"60b8dfd2-2770-4838-9dc4-\
+303ca6fb8168"],
+
+Cell[TextData[{
+ StyleBox["\nReplace ",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+  "\"\<\!\(\*SubscriptBox[\(VoltageHeight1Measurement\), \(i\)]\)\>\"", 
+   TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->16,ExpressionUUID->"ae7f3ac0-53a6-4506-91f4-8a489ad794b6"],
+ StyleBox[" below with the value of measurement i of the voltage \
+corresponding to ",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["Height", "1"], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->16,ExpressionUUID->"47a59f73-c674-43e5-ac00-2cf9caf009ef"],
+ StyleBox[" for i=1,2,3,4,5 (in Volts).",
+  FontSize->16]
+}], "Text",
+ CellChangeTimes->{{3.8429387683275747`*^9, 3.842938770462805*^9}, {
+   3.842938869662938*^9, 3.8429388992325*^9}, {3.8429390563128552`*^9, 
+   3.8429390779525113`*^9}, {3.842939218348549*^9, 3.842939254398855*^9}, {
+   3.8429393068965564`*^9, 3.842939377920982*^9}, {3.842939559812909*^9, 
+   3.842939560671013*^9}, {3.8429398811226416`*^9, 3.8429399362134447`*^9}, {
+   3.842939973730956*^9, 3.8429399778611984`*^9}, {3.842940101611311*^9, 
+   3.842940101611311*^9}, {3.8429401476108904`*^9, 3.842940169391634*^9}, {
+   3.842940288280455*^9, 3.842940308032358*^9}, {3.842940365342352*^9, 
+   3.8429404054535756`*^9}, {3.842940439803511*^9, 3.842940494713151*^9}, 
+   3.8429412685952177`*^9},ExpressionUUID->"80dcab1c-694b-4ed2-bdfb-\
+afc0bb47e7c0"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Voltages1", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["VoltageHeight1Measurement", "1"], ",", 
+     SubscriptBox["VoltageHeight1Measurement", "2"], ",", 
+     SubscriptBox["VoltageHeight1Measurement", "3"], ",", 
+     SubscriptBox["VoltageHeight1Measurement", "4"], ",", 
+     SubscriptBox["VoltageHeight1Measurement", "5"]}], "}"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.84293999225117*^9, 3.8429401361912236`*^9}, {
+  3.8429403766028214`*^9, 
+  3.842940377700715*^9}},ExpressionUUID->"2829ed22-fc34-4f2c-90dd-\
+bb4b9e6fdbc3"],
+
+Cell[TextData[{
+ StyleBox["\nReplace ",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+  "\"\<\!\(\*SubscriptBox[\(VoltageHeight2Measurement\), \(i\)]\)\>\"", 
+   TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->16,ExpressionUUID->"efe094dc-dbde-4ab8-864e-ab95ec2fdeaf"],
+ StyleBox[" below with the value of measurement i of the voltage \
+corresponding to ",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["Height", "2"], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->16,ExpressionUUID->"81ab79c2-01a8-4c1b-abbd-ef286f2a50a6"],
+ StyleBox[" for i=1,2,3,4,5 (in Volts).",
+  FontSize->16]
+}], "Text",
+ CellChangeTimes->{{3.8429387683275747`*^9, 3.842938770462805*^9}, {
+   3.842938869662938*^9, 3.8429388992325*^9}, {3.8429390563128552`*^9, 
+   3.8429390779525113`*^9}, {3.842939218348549*^9, 3.842939254398855*^9}, {
+   3.8429393068965564`*^9, 3.842939377920982*^9}, {3.842939559812909*^9, 
+   3.842939560671013*^9}, {3.8429398811226416`*^9, 3.8429399362134447`*^9}, {
+   3.842939973730956*^9, 3.8429399778611984`*^9}, {3.842940101611311*^9, 
+   3.842940101611311*^9}, {3.8429401476108904`*^9, 3.842940169391634*^9}, {
+   3.842940288280455*^9, 3.842940308032358*^9}, {3.842940365342352*^9, 
+   3.8429404054535756`*^9}, {3.842940439803511*^9, 3.842940494713151*^9}, {
+   3.842940751522142*^9, 3.842940755311284*^9}, 
+   3.8429412703227406`*^9},ExpressionUUID->"2be38d7b-53d0-435e-b168-\
+26732c07125a"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Voltages2", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["VoltageHeight2Measurement", "1"], ",", 
+     SubscriptBox["VoltageHeight2Measurement", "2"], ",", 
+     SubscriptBox["VoltageHeight2Measurement", "3"], ",", 
+     SubscriptBox["VoltageHeight2Measurement", "4"], ",", 
+     SubscriptBox["VoltageHeight2Measurement", "5"]}], "}"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.84293999225117*^9, 3.8429401361912236`*^9}, {
+  3.8429403766028214`*^9, 3.842940377700715*^9}, {3.8429407359450245`*^9, 
+  3.8429407485838223`*^9}},ExpressionUUID->"1a0d834f-8786-4d19-b0ab-\
+a69fe304d8ff"],
+
+Cell[TextData[{
+ StyleBox["\nReplace ",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+  "\"\<\!\(\*SubscriptBox[\(VoltageHeight3Measurement\), \(i\)]\)\>\"", 
+   TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->16,ExpressionUUID->"538c9aef-2510-4f95-9173-accd68acdfb6"],
+ StyleBox[" below with the value of measurement i of the voltage \
+corresponding to ",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["Height", "3"], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->16,ExpressionUUID->"24862d41-7088-466d-b959-9419d7690fad"],
+ StyleBox[" for i=1,2,3,4,5 (in Volts).",
+  FontSize->16]
+}], "Text",
+ CellChangeTimes->{{3.8429387683275747`*^9, 3.842938770462805*^9}, {
+   3.842938869662938*^9, 3.8429388992325*^9}, {3.8429390563128552`*^9, 
+   3.8429390779525113`*^9}, {3.842939218348549*^9, 3.842939254398855*^9}, {
+   3.8429393068965564`*^9, 3.842939377920982*^9}, {3.842939559812909*^9, 
+   3.842939560671013*^9}, {3.8429398811226416`*^9, 3.8429399362134447`*^9}, {
+   3.842939973730956*^9, 3.8429399778611984`*^9}, {3.842940101611311*^9, 
+   3.842940101611311*^9}, {3.8429401476108904`*^9, 3.842940169391634*^9}, {
+   3.842940288280455*^9, 3.842940308032358*^9}, {3.842940365342352*^9, 
+   3.8429404054535756`*^9}, {3.842940439803511*^9, 3.842940494713151*^9}, {
+   3.842940760640959*^9, 3.842940764001396*^9}, 
+   3.8429412721907206`*^9},ExpressionUUID->"78ae6973-ea58-4eb4-83ac-\
+c02d0bfa56f1"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Voltages3", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["VoltageHeight3Measurement", "1"], ",", 
+     SubscriptBox["VoltageHeight3Measurement", "2"], ",", 
+     SubscriptBox["VoltageHeight3Measurement", "3"], ",", 
+     SubscriptBox["VoltageHeight3Measurement", "4"], ",", 
+     SubscriptBox["VoltageHeight3Measurement", "5"]}], "}"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.84293999225117*^9, 3.8429401361912236`*^9}, {
+  3.8429403766028214`*^9, 3.842940377700715*^9}, {3.842940767373*^9, 
+  3.8429407779725194`*^9}},ExpressionUUID->"48db572e-4404-4b40-b4a2-\
+7ab5c5eac595"],
+
+Cell[TextData[{
+ StyleBox["\nReplace ",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+  "\"\<\!\(\*SubscriptBox[\(VoltageHeight4Measurement\), \(i\)]\)\>\"", 
+   TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->16,ExpressionUUID->"6e809054-76e8-4ea1-a39c-f6c716e58c6a"],
+ StyleBox[" below with the value of measurement i of the voltage \
+corresponding to ",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["Height", "4"], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->16,ExpressionUUID->"0e8d0de0-60b2-4a77-8901-b5002d973b6d"],
+ StyleBox[" for i=1,2,3,4,5 (in Volts).",
+  FontSize->16]
+}], "Text",
+ CellChangeTimes->{{3.8429387683275747`*^9, 3.842938770462805*^9}, {
+   3.842938869662938*^9, 3.8429388992325*^9}, {3.8429390563128552`*^9, 
+   3.8429390779525113`*^9}, {3.842939218348549*^9, 3.842939254398855*^9}, {
+   3.8429393068965564`*^9, 3.842939377920982*^9}, {3.842939559812909*^9, 
+   3.842939560671013*^9}, {3.8429398811226416`*^9, 3.8429399362134447`*^9}, {
+   3.842939973730956*^9, 3.8429399778611984`*^9}, {3.842940101611311*^9, 
+   3.842940101611311*^9}, {3.8429401476108904`*^9, 3.842940169391634*^9}, {
+   3.842940288280455*^9, 3.842940308032358*^9}, {3.842940365342352*^9, 
+   3.8429404054535756`*^9}, {3.842940439803511*^9, 3.842940494713151*^9}, {
+   3.8429407828728704`*^9, 3.842940787691388*^9}, 
+   3.8429412736532135`*^9},ExpressionUUID->"581edfa1-b863-4c53-a839-\
+f48dd56058f6"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Voltages4", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["VoltageHeight4Measurement", "1"], ",", 
+     SubscriptBox["VoltageHeight4Measurement", "2"], ",", 
+     SubscriptBox["VoltageHeight4Measurement", "3"], ",", 
+     SubscriptBox["VoltageHeight4Measurement", "4"], ",", 
+     SubscriptBox["VoltageHeight4Measurement", "5"]}], "}"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.84293999225117*^9, 3.8429401361912236`*^9}, {
+  3.8429403766028214`*^9, 3.842940377700715*^9}, {3.842940791862492*^9, 
+  3.842940806171153*^9}},ExpressionUUID->"63519d93-f85c-4e5a-ba53-\
+fe1bf2afbb22"],
+
+Cell[TextData[{
+ "\n",
+ StyleBox["You don\[CloseCurlyQuote]t have to adjust anything in the \
+following section. It produces a plot of the mean values (with error bars) of \
+the measured potentials at different heights. This plot shows that the \
+measurement device gives a voltage that scales linearly with the pressure.",
+  FontSize->16]
+}], "Text",
+ CellChangeTimes->{{3.8429387683275747`*^9, 3.842938770462805*^9}, {
+  3.842938869662938*^9, 3.8429388992325*^9}, {3.8429390563128552`*^9, 
+  3.8429390779525113`*^9}, {3.842939218348549*^9, 3.842939254398855*^9}, {
+  3.8429393068965564`*^9, 3.842939377920982*^9}, {3.842939559812909*^9, 
+  3.842939560671013*^9}, {3.8429398811226416`*^9, 3.8429399362134447`*^9}, {
+  3.842939973730956*^9, 3.8429399778611984`*^9}, {3.842940101611311*^9, 
+  3.842940101611311*^9}, {3.8429401476108904`*^9, 3.842940169391634*^9}, {
+  3.842940288280455*^9, 3.842940308032358*^9}, {3.842940365342352*^9, 
+  3.8429404054535756`*^9}, {3.842940439803511*^9, 3.842940494713151*^9}, {
+  3.8429405455712495`*^9, 3.842940577830865*^9}, {3.842940718562872*^9, 
+  3.8429407228117247`*^9}, {3.8429412801108704`*^9, 3.8429412832823763`*^9}, {
+  3.8429413775628653`*^9, 3.8429413991811247`*^9}, {3.8429434344004116`*^9, 
+  3.84294355130112*^9}},ExpressionUUID->"73364151-55be-45a8-bdf3-\
+b79a2851272c"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Mean1", "=", 
+   RowBox[{"Mean", "[", "Voltages1", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Mean2", "=", 
+   RowBox[{"Mean", "[", "Voltages2", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Mean3", "=", 
+   RowBox[{"Mean", "[", "Voltages3", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Mean4", "=", 
+   RowBox[{"Mean", "[", "Voltages4", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Dev1", "=", 
+   RowBox[{"StandardDeviation", "[", "Voltages1", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Dev2", "=", 
+   RowBox[{"StandardDeviation", "[", "Voltages2", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Dev3", "=", 
+   RowBox[{"StandardDeviation", "[", "Voltages3", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Dev4", "=", 
+   RowBox[{"StandardDeviation", "[", "Voltages4", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Pa", "=", "101325"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Rho]", "=", 
+   RowBox[{"0.9982", "*", "1000"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"g", "=", "9.81"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Lijst", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Heights", "[", 
+        RowBox[{"[", "1", "]"}], "]"}], ",", 
+       RowBox[{"Mean1", "\[PlusMinus]", "Dev1"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Heights", "[", 
+        RowBox[{"[", "2", "]"}], "]"}], ",", 
+       RowBox[{"Mean2", "\[PlusMinus]", "Dev2"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Heights", "[", 
+        RowBox[{"[", "3", "]"}], "]"}], ",", 
+       RowBox[{"Mean3", "\[PlusMinus]", "Dev3"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Heights", "[", 
+        RowBox[{"[", "4", "]"}], "]"}], ",", 
+       RowBox[{"Mean4", "\[PlusMinus]", "Dev4"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Heights", "[", 
+        RowBox[{"[", "4", "]"}], "]"}], ",", 
+       RowBox[{"Mean4", "\[PlusMinus]", "Dev4"}]}], "}"}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Lijst2", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Heights", "[", 
+        RowBox[{"[", "1", "]"}], "]"}], ",", "Mean1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Heights", "[", 
+        RowBox[{"[", "2", "]"}], "]"}], ",", "Mean2"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Heights", "[", 
+        RowBox[{"[", "3", "]"}], "]"}], ",", "Mean3"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Heights", "[", 
+        RowBox[{"[", "4", "]"}], "]"}], ",", "Mean4"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Heights", "[", 
+        RowBox[{"[", "4", "]"}], "]"}], ",", "Mean4"}], "}"}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"plot1", "=", 
+   RowBox[{"ListPlot", "[", 
+    RowBox[{"Lijst", ",", 
+     RowBox[{"PlotStyle", "\[Rule]", "Red"}], ",", 
+     RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+     RowBox[{"FrameLabel", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"\"\<Hight (m)\>\"", ",", "\"\<Potential(V)\>\""}], "}"}]}], 
+     ",", 
+     RowBox[{
+     "PlotLabel", "\[Rule]", 
+      "\"\<Plot of measured voltage due to hydrostatic preasure\>\""}]}], 
+    "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"nlm", "=", 
+   RowBox[{"NonlinearModelFit", "[", 
+    RowBox[{"Lijst2", ",", 
+     RowBox[{
+      RowBox[{"a", " ", "x"}], " ", "+", "b"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"a", ",", "b"}], "}"}], ",", "x"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"parameters", "=", 
+   RowBox[{"nlm", "[", "\"\<BestFitParameters\>\"", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"plot2", "=", 
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"nlm", "[", "x", "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", 
+       RowBox[{
+        RowBox[{"Heights", "[", 
+         RowBox[{"[", "4", "]"}], "]"}], "*", "1.2"}]}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Show", "[", 
+  RowBox[{"plot1", ",", "plot2"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.842583570445121*^9, 3.8425837041148577`*^9}, {
+   3.8425837419989357`*^9, 3.84258383804503*^9}, {3.842583904174009*^9, 
+   3.842583999481662*^9}, {3.8425840546807156`*^9, 3.8425840590056148`*^9}, {
+   3.842584413984835*^9, 3.842584455238331*^9}, {3.8425879866720276`*^9, 
+   3.842588009899647*^9}, {3.8425881189107704`*^9, 3.8425881452249637`*^9}, {
+   3.842588266824071*^9, 3.8425882822209663`*^9}, {3.8429392817379313`*^9, 
+   3.8429392990711007`*^9}, {3.842939406213934*^9, 3.842939420985414*^9}, {
+   3.8429399113311834`*^9, 3.8429399462309723`*^9}, {3.8429400069711323`*^9, 
+   3.842940012492134*^9}, {3.8429405272778034`*^9, 3.8429405402632732`*^9}, {
+   3.8429409532608585`*^9, 3.8429410314925604`*^9}, {3.8429410806414676`*^9, 
+   3.842941142850235*^9}, {3.8429412949435835`*^9, 3.8429413195732803`*^9}, {
+   3.8429415353132524`*^9, 3.8429415441026983`*^9}, {3.842942809822051*^9, 
+   3.842942815941038*^9}, {3.842942882322405*^9, 3.842942931711969*^9}, 
+   3.842943093991217*^9, {3.8429454996427293`*^9, 
+   3.8429455058650293`*^9}},ExpressionUUID->"fb3af5b4-9c1b-44e6-88e1-\
+36f3abee9ff8"],
+
+Cell[TextData[{
+ "\n",
+ StyleBox["Below, a formula is provided to go from measured potential (in \
+Volts) to pressure (in Pascal). If you would like to know the pressure \
+corresponding to a certain potential, you can replace \
+\[OpenCurlyDoubleQuote]x\[CloseCurlyDoubleQuote] by that potential. Also this \
+section produces a plot of the relation between pressure and the measured \
+potential.",
+  FontSize->16]
+}], "Text",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQBWIQXVfN9enSwjeOPuf9wPQps63/QPSSgnSmy0D6JROX
+GIj+WbVPAkQHqHtrgeicw2f0QPT0DTGmIHp9ha0diI5i/hUCoj9UiIaC6HVv
+lGtBdNcVthYQ/S95ewdYvs+6E0Tf6d88A5nO6imeB6JdOnQWgujanxwbQLQI
+Z+MmEN3zZdVOEL2xed0+EB277echEK106dpJEL3W3egCiC6aZnUFRPMwX3oK
+opf9jHwGoh16mHWuAGkrzkww/Y/JyAJEHzv91ApE61zwsbwK4i966Q6iow4v
+8wHRh97cDgLRIsr2kWDxSu00EB3YyhJ0DeRul+5QEA0AlozDHw==
+  "],ExpressionUUID->"32d845f7-929a-4940-b41b-8d719cf5685a"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Pressure", "[", "V_", "]"}], ":=", 
+  RowBox[{
+   RowBox[{"Pa", "+", 
+    RowBox[{"\[Rho]", " ", "g", " ", 
+     FractionBox[
+      RowBox[{"V", "-", "b"}], "a"]}]}], "/.", 
+   "parameters"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Pressure", "[", "x", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Pa", "+", 
+     RowBox[{"\[Rho]", " ", "g", " ", 
+      FractionBox[
+       RowBox[{"V", "-", "b"}], "a"]}]}], "/.", "parameters"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"V", ",", 
+     RowBox[{"-", "0.5"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+   RowBox[{
+   "PlotLabel", "\[Rule]", 
+    "\"\<Relation between measured Voltage and its corresponding \
+pressure\>\""}], ",", 
+   RowBox[{"FrameLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\"\<Potential (V)\>\"", ",", "\"\<Pressure (Pa)\>\""}], 
+     "}"}]}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.8425879497834215`*^9, 3.842587981416563*^9}, {
+   3.8425882868553905`*^9, 3.842588307474431*^9}, {3.842588488695429*^9, 
+   3.8425885226152105`*^9}, {3.842588599767086*^9, 3.842588605924604*^9}, {
+   3.842588942240383*^9, 3.842588962685464*^9}, {3.842588998845652*^9, 
+   3.8425890933164663`*^9}, {3.8425891482682066`*^9, 
+   3.8425891999801407`*^9}, {3.842589740654477*^9, 3.842589745358986*^9}, {
+   3.8425898010102234`*^9, 3.8425898090331078`*^9}, {3.842590964243491*^9, 
+   3.84259097194162*^9}, {3.8425910063285227`*^9, 3.8425910185179024`*^9}, {
+   3.842591342659706*^9, 3.8425915139003735`*^9}, {3.8425915464652877`*^9, 
+   3.842591747943286*^9}, {3.8425918126523237`*^9, 3.842591818025077*^9}, {
+   3.842600262349764*^9, 3.8426002636404004`*^9}, {3.8429436658424215`*^9, 
+   3.8429436833325987`*^9}, {3.8429457108109064`*^9, 3.84294572749214*^9}, {
+   3.842945765661295*^9, 3.842945878750854*^9}, {3.8429459523019257`*^9, 
+   3.8429459555211515`*^9}, 
+   3.842946780620549*^9},ExpressionUUID->"6ffbdcb1-bbe6-4c74-b62a-\
+ff0e93ab5700"],
+
+Cell[TextData[{
+ "\n",
+ StyleBox["Replace ",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+  "\"\<\!\(\*SubscriptBox[\(FlowRate\), \(i\)]\)\>\"", TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "f0ebeada-87a4-4078-bc1c-fce82d44b6c8"],
+ " with the applied flow rate of the pump for i=1,2,3,4,5."
+}], "Text",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQA2IQXVfN9enSwjeOPuf9wPQps63/QPSSgnSmy0D6JROX
+GIj+WbVPAkQHqHtrgeicw2f0QPT0DTGmIHp9ha0diI5i/hUCoj9UiIaC6HVv
+lGtBdNcVthYQ/S95ewdYvs+6E0Tf6d88A5nO6imeB6JdOnQWgujanxwbQLQI
+Z+MmEN3zZdVOEL2xed0+EB277echEK106dpJEL3W3egCiC6aZnUFRPMwX3oK
+opf9jHwGoh16mHWuAGkrzkww/Y/JyAJEHzv91ApE61zwsbwK4i966Q6iow4v
+8wHRh97cDgLRIsr2kWDxSu00EB3YyhJ0DeRul+5QEO20lfMLiBacOPsXiAYA
+Fw/Mkw==
+  "],ExpressionUUID->"c307ffed-b169-48af-8bb1-5b7f69c1c273"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"flow", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["FlowRate", "1"], ",", 
+     SubscriptBox["FlowRate", "2"], ",", 
+     SubscriptBox["FlowRate", "3"], ",", 
+     SubscriptBox["FlowRate", "4"], ",", 
+     SubscriptBox["FlowRate", "5"]}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.842946823672858*^9, 3.8429468413026776`*^9}, {
+   3.842946903420143*^9, 3.842946966670598*^9}, {3.842947075443503*^9, 
+   3.842947076771188*^9}, 
+   3.8429479992505355`*^9},ExpressionUUID->"f86a2ff4-184d-46bf-a9c0-\
+d5448cd5dd01"],
+
+Cell[TextData[{
+ "\n",
+ StyleBox["Replace ",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+  "\"\<\!\(\*SubscriptBox[\(FirstMeanVoltageFlow\), \(i\)]\)\>\"", 
+   TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "e93aa98e-6a0a-4c5c-be99-dd7037f19876"],
+ " with the measured mean voltage on the oscilloscope for flow rate i and the \
+measurement device attached at point 1, for i=1,2,3,4,5."
+}], "Text",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGCQAWIQXVfN9enSwjeOPuf9wPQps63/QPSSgnSmy0D6JROX
+GIj+WbVPAkQHqHtrgeicw2f0QPT0DTGmIHp9ha0diI5i/hUCoj9UiIaC6HVv
+lGtBdNcVthYQ/S95ewdYvs+6E0Tf6d88A5nO6imeB6JdOnQWgujanxwbQLQI
+Z+MmEN3zZdVOEL2xed0+EB277echEK106dpJEL3W3egCiC6aZnUFRPMwX3oK
+opf9jHwGoh16mHWuAGkrzkww/Y/JyAJEHzv91ApE61zwsbwK4i966Q6iow4v
+8wHRh97cDgLRIsr2kWDxSu00EB3YyhJ0DeRul+5QEO20lfMLiBacOPsXiD51
+klfuOpB2tFoqD6J5VPgtQPSEecZWIHr2/dN2IHpRZJAziM75tccDLF+u6wNW
+fz41DER/fXEnGkR/3yScA6JnpWiAaQCRywHU
+  "],ExpressionUUID->"d8d6d830-e669-4ce8-9d93-7f474a7ecdd2"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"FlowMeanVoltages1", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["FirstMeanVoltageFlow", "1"], ",", 
+     SubscriptBox["FirstMeanVoltageFlow", "2"], ",", 
+     SubscriptBox["FirstMeanVoltageFlow", "3"], ",", 
+     SubscriptBox["FirstMeanVoltageFlow", "4"], ",", 
+     SubscriptBox["FirstMeanVoltageFlow", "5"]}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.842947112592697*^9, 3.8429472971012144`*^9}, {
+   3.8429476180908856`*^9, 3.8429476624521523`*^9}, {3.842947838162842*^9, 
+   3.842947853350851*^9}, {3.8429479251032395`*^9, 3.8429479521410403`*^9}, 
+   3.8429479973024087`*^9, {3.842948061901349*^9, 
+   3.8429480868529415`*^9}},ExpressionUUID->"e533893f-3f94-43d9-aaca-\
+19d02b805b9c"],
+
+Cell[TextData[{
+ "\n",
+ StyleBox["Replace ",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+  "\"\<\!\(\*SubscriptBox[\(SecondMeanVoltageFlow\), \(i\)]\)\>\"", 
+   TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "03908ed1-1327-431f-a269-ad621587cf13"],
+ " with the measured mean voltage on the oscilloscope for flow rate i and the \
+measurement device attached at point 2, for i=1,2,3,4,5."
+}], "Text",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGCQAWIQXVfN9enSwjeOPuf9wPQps63/QPSSgnSmy0D6JROX
+GIj+WbVPAkQHqHtrgeicw2f0QPT0DTGmIHp9ha0diI5i/hUCoj9UiIaC6HVv
+lGtBdNcVthYQ/S95ewdYvs+6E0Tf6d88A5nO6imeB6JdOnQWgujanxwbQLQI
+Z+MmEN3zZdVOEL2xed0+EB277echEK106dpJEL3W3egCiC6aZnUFRPMwX3oK
+opf9jHwGoh16mHWuAGkrzkww/Y/JyAJEHzv91ApE61zwsbwK4i966Q6iow4v
+8wHRh97cDgLRIsr2kWDxSu00EB3YyhJ0DeRul+5QEO20lfMLiBacOPsXiD51
+klfuOpB2tFoqD6J5VPgtQPSEecZWIHr2/dN2IHpRZJAziM75tccDLF+u6wNW
+fz41DERL/b0RB6IZ3nbmgOjuRYvANAB9nAFw
+  "],ExpressionUUID->"6df6e198-d55d-49e5-bfa1-8fb3895cd937"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"FlowMeanVoltages2", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["SecondMeanVoltageFlow", "1"], ",", 
+     SubscriptBox["SecondMeanVoltageFlow", "2"], ",", 
+     SubscriptBox["SecondMeanVoltageFlow", "3"], ",", 
+     SubscriptBox["SecondMeanVoltageFlow", "4"], ",", 
+     SubscriptBox["SecondMeanVoltageFlow", "5"]}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.842947112592697*^9, 3.8429472971012144`*^9}, {
+   3.8429476180908856`*^9, 3.8429476624521523`*^9}, {3.8429479140609436`*^9, 
+   3.8429479169445925`*^9}, {3.8429479579238567`*^9, 3.842947963792862*^9}, 
+   3.842947998292407*^9, {3.842948088960825*^9, 
+   3.8429480918029017`*^9}},ExpressionUUID->"03b733b8-a1d3-44fa-a45c-\
+f80c89751d50"],
+
+Cell[TextData[{
+ "\n",
+ StyleBox["You don\[CloseCurlyQuote]t have to make changes to the following \
+section.",
+  FontSize->16]
+}], "Text",
+ CellChangeTimes->CompressedData["
+1:eJxNzk8ogwEYBvCvb5KtSWokhZhSjMNE88kYqylLLFNbOFgjWhEH2zQl1GbL
+nwtqtdpiSpmhkdIOW6ltypoZZeU0tZqSdvlWlj3fyeHt1/s87+Gtn15QaEmC
+IGoKA9dWOT8xZ0YifxpmDHf68vB4cZZ8LpgmOZWQNvqr4EjTUDPUBR/b4KF3
+ogNe6HvEUM3KjcFvfYUSejJ8E9yOF2/CvObWzPQ73RaY3L0++u+8bdkBpWaB
+E5roEi/ksdevoC17dgcvNzx+OHlDB2BDLBGC5zJhFC4dUHHIZcVS0E2rPmGf
+jSWIF6TYc4x5UiiCD5EUBQVRedcLdldaBtVBtxwGMu8KyOP3qpjc0DIDR7eK
+FAn8LbUqYb+PnYXl+/YcDIdKa18LSqiTOshtLBPBPUc7Be0fETF0qRQDUJe7
+H2T6lVY5c/+kHYfVv29TkPiy6KDV5WIUak4N0JNKGuEf5b0LWQ==
+  "],ExpressionUUID->"48079dde-1185-4496-bb38-0c706b5c03a4"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"FlowPressure1", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Pressure", "[", 
+      RowBox[{"FlowMeanVoltages1", "[", 
+       RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
+     RowBox[{"Pressure", "[", 
+      RowBox[{"FlowMeanVoltages1", "[", 
+       RowBox[{"[", "2", "]"}], "]"}], "]"}], ",", 
+     RowBox[{"Pressure", "[", 
+      RowBox[{"FlowMeanVoltages1", "[", 
+       RowBox[{"[", "3", "]"}], "]"}], "]"}], ",", 
+     RowBox[{"Pressure", "[", 
+      RowBox[{"FlowMeanVoltages1", "[", 
+       RowBox[{"[", "4", "]"}], "]"}], "]"}], ",", 
+     RowBox[{"Pressure", "[", 
+      RowBox[{"FlowMeanVoltages1", "[", 
+       RowBox[{"[", "5", "]"}], "]"}], "]"}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"FlowPressure2", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Pressure", "[", 
+      RowBox[{"FlowMeanVoltages2", "[", 
+       RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
+     RowBox[{"Pressure", "[", 
+      RowBox[{"FlowMeanVoltages2", "[", 
+       RowBox[{"[", "2", "]"}], "]"}], "]"}], ",", 
+     RowBox[{"Pressure", "[", 
+      RowBox[{"FlowMeanVoltages2", "[", 
+       RowBox[{"[", "3", "]"}], "]"}], "]"}], ",", 
+     RowBox[{"Pressure", "[", 
+      RowBox[{"FlowMeanVoltages2", "[", 
+       RowBox[{"[", "4", "]"}], "]"}], "]"}], ",", 
+     RowBox[{"Pressure", "[", 
+      RowBox[{"FlowMeanVoltages2", "[", 
+       RowBox[{"[", "5", "]"}], "]"}], "]"}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Point1Pressures", "=", 
+   RowBox[{"Transpose", "[", 
+    RowBox[{"{", 
+     RowBox[{"flow", ",", "FlowPressure1"}], "}"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Point2Pressures", "=", 
+   RowBox[{"Transpose", "[", 
+    RowBox[{"{", 
+     RowBox[{"flow", ",", "FlowPressure2"}], "}"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"ListPlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"Point1Pressures", ",", "Point2Pressures"}], "}"}], ",", 
+   RowBox[{"PlotLegends", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<Mean pressure at point 1\>\"", ",", 
+      "\"\<Mean pressure at point 2\>\""}], "}"}]}], ",", 
+   RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+   RowBox[{"FrameLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<Flow rate (mL/min)\>\"", ",", " ", "\"\<Pressure (Pa)\>\""}], 
+     "}"}]}], ",", 
+   RowBox[{
+   "PlotLabel", "\[Rule]", "\"\<Pressure for different flow rates\>\""}]}], 
+  "]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.8429480571121936`*^9, 3.8429480723725214`*^9}, {
+   3.842948107482953*^9, 3.8429481221510544`*^9}, {3.8429481701024327`*^9, 
+   3.842948389402465*^9}, {3.8429484314329224`*^9, 3.8429484553526735`*^9}, 
+   3.842949251322664*^9},
+ CellLabel->
+  "In[325]:=",ExpressionUUID->"37c0e720-f7b4-40cb-919e-5b99bd343a1d"]
+},
+WindowSize->{1280, 637},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 858, 18, 35, "Text",ExpressionUUID->"9b41f2d8-cf80-4d10-bf71-607222d87abe"],
+Cell[1419, 40, 389, 11, 30, "Input",ExpressionUUID->"60b8dfd2-2770-4838-9dc4-303ca6fb8168"],
+Cell[1811, 53, 1389, 30, 58, "Text",ExpressionUUID->"80dcab1c-694b-4ed2-bdfb-afc0bb47e7c0"],
+Cell[3203, 85, 580, 14, 30, "Input",ExpressionUUID->"2829ed22-fc34-4f2c-90dd-bb4b9e6fdbc3"],
+Cell[3786, 101, 1439, 31, 58, "Text",ExpressionUUID->"2be38d7b-53d0-435e-b168-26732c07125a"],
+Cell[5228, 134, 630, 14, 30, "Input",ExpressionUUID->"1a0d834f-8786-4d19-b0ab-a69fe304d8ff"],
+Cell[5861, 150, 1439, 31, 58, "Text",ExpressionUUID->"78ae6973-ea58-4eb4-83ac-c02d0bfa56f1"],
+Cell[7303, 183, 625, 14, 30, "Input",ExpressionUUID->"48db572e-4404-4b40-b4a2-7ab5c5eac595"],
+Cell[7931, 199, 1441, 31, 58, "Text",ExpressionUUID->"581edfa1-b863-4c53-a839-f48dd56058f6"],
+Cell[9375, 232, 626, 14, 30, "Input",ExpressionUUID->"63519d93-f85c-4e5a-ba53-fe1bf2afbb22"],
+Cell[10004, 248, 1321, 21, 80, "Text",ExpressionUUID->"73364151-55be-45a8-bdf3-b79a2851272c"],
+Cell[11328, 271, 5431, 146, 371, "Input",ExpressionUUID->"fb3af5b4-9c1b-44e6-88e1-36f3abee9ff8"],
+Cell[16762, 419, 880, 17, 80, "Text",ExpressionUUID->"32d845f7-929a-4940-b41b-8d719cf5685a"],
+Cell[17645, 438, 2008, 44, 150, "Input",ExpressionUUID->"6ffbdcb1-bbe6-4c74-b62a-ff0e93ab5700"],
+Cell[19656, 484, 798, 19, 57, "Text",ExpressionUUID->"c307ffed-b169-48af-8bb1-5b7f69c1c273"],
+Cell[20457, 505, 562, 14, 28, "Input",ExpressionUUID->"f86a2ff4-184d-46bf-a9c0-d5448cd5dd01"],
+Cell[21022, 521, 981, 22, 57, "Text",ExpressionUUID->"d8d6d830-e669-4ce8-9d93-7f474a7ecdd2"],
+Cell[22006, 545, 741, 15, 30, "Input",ExpressionUUID->"e533893f-3f94-43d9-aaca-19d02b805b9c"],
+Cell[22750, 562, 982, 22, 57, "Text",ExpressionUUID->"6df6e198-d55d-49e5-bfa1-8fb3895cd937"],
+Cell[23735, 586, 746, 15, 30, "Input",ExpressionUUID->"03b733b8-a1d3-44fa-a45c-f80c89751d50"],
+Cell[24484, 603, 717, 15, 57, "Text",ExpressionUUID->"48079dde-1185-4496-bb38-0c706b5c03a4"],
+Cell[25204, 620, 2829, 76, 181, "Input",ExpressionUUID->"37c0e720-f7b4-40cb-919e-5b99bd343a1d"]
+}
+]
+*)
+

@@ -1,0 +1,16 @@
+Theory of Pressure measurement
+
+For the measurement of the pressure drop over the battery cell, we will first measure pressure drop on a tube of length L.
+The theory gives the following formula: 
+$\delta P = \lambda L / D \rho / 2 \omega ^2$
+
+\delta P Pressure drop (Pa)
+\lambda pipe friction coefficient 
+L length of pipe (m)
+D Pipe Diameter (m)
+\rho fluid density (kg/m^3)
+\omega flow velocity (m/s)
+
+The pressure drop relates to the incoming pressure P_1 and outgoing pressure P_2 as follows:
+\delta P = (P_1 ^2 - P_2 ^2)/2 P_1 
+
